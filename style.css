@@ -1,0 +1,170 @@
+* {
+    font-family: "Racing Sans One", sans-serif;
+}
+
+body {
+    background-color: rgb(39, 38, 38);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    font-size: 100px;
+}
+
+h3 {
+    font-size: 40px;
+    color: brown;
+    font-weight: bolder;
+}
+
+.btn {
+    background: linear-gradient(45deg, #555, #aaa);
+    color: white;
+    margin-bottom: 30px;
+    padding: 20px 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 30px;
+    box-shadow: 5px 5px 20px gray;
+}
+
+.container {
+    width: 100%;
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.track {
+    background-image: url('./car track.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 1500px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#car-1,
+#car-2 {
+    position: absolute;
+    transition: left 0.5s ease;
+}
+
+#car-1 img,
+#car-2 img {
+    height: 100px;
+    width: 200px;
+}
+
+#car-2 img {
+    height: 140px;
+    width: 200px;
+}
+
+#car-1 {
+    top: 52%;
+    left: 0;
+}
+
+#car-2 {
+    bottom: 60%;
+    left: 0;
+}
+
+#type-container {
+    display: block;
+    background: #878686;
+    padding: 40px;
+    margin: 40px auto;
+    margin-bottom: 500px;
+    border-radius: 20px;
+    width: 30%;
+}
+
+#word-to-type {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 30px;
+    width: 100%;
+}
+
+dialog {
+    padding: 100px;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    color: black;
+    font-size: 24px;
+    text-align: center;
+}
+
+@media (max-width:768px) {
+    h2 {
+        font-size: 50px;
+    }
+
+    .btn {
+        margin-bottom: 80px;
+    }
+
+    .container {
+        height: 1500px;
+    }
+
+    #car-1 img,
+    #car-2 img {
+        height: 40px;
+        width: 46px;
+    }
+    #car-1 img {
+    height:40px;
+    width: 40px;
+}
+#car-1 {
+    top: 1%;
+
+}
+#car-2 {
+    bottom: 86%;
+
+}
+
+#type-container {
+
+    padding: 50px;
+
+    border-radius: 20px;
+    width: 50%;
+    height: 100px;
+   position: relative;
+   transform: translateY(-300%);
+}
+#word-to-type {
+    font-size: 30px;
+
+}
+input {
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+    width: 100%;
+}
+
+}
